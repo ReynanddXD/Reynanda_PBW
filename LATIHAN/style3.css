@@ -90,6 +90,15 @@ nav ul li a {
   margin-bottom: 10px;
 }
 
+.pesan {
+  border: none;
+  border-bottom: 1px solid #424242;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 footer {
   text-align: center;
   padding: 10px;
