@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Test JavaScript</title>
+    <!-- Menyertakan file eksternal JavaScript -->
+    <script src="script5.js"></script>
+  </head>
+  <body>
+    <!-- JavaScript langsung di dalam atribut HTML -->
+    <button onclick="alert('Halo! Ini dari JavaScript')">Klik Saya</button>
+
+    <!-- JavaScript di dalam tag -->
+    <h1 id="judul">Selamat Datang</h1>
+    <button onclick="ubahTeks()">Ubah Teks</button>
+    <script>
+      function ubahTeks() {
+        document.getElementById("judul").innerHTML = "Teks telah berubah!";
+      }
+    </script>
+
+    <!-- JavaScript dengan event listener -->
+    <button id="btnEvent">Klik Saya (Event Listener)</button>
+
+    <script>
+      document
+        .getElementById("btnEvent")
+        .addEventListener("click", function () {
+          alert("Ini dari Event Listener!");
+        });
+    </script>
+
+    <!-- JavaScript dalam file eksternal -->
+    <h1>Selamat Datang</h1>
+    <button onclick="salam()">Klik untuk Salam</button>
+  </body>
+</html>
