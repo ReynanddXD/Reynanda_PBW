@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Form Praktikum</title>
+  </head>
+  <body>
+    <!-- Form utama untuk mengumpulkan data -->
+    <form action="" method="">
+      <!-- Input teks untuk username -->
+      <input type="text" name="username" />
+
+      <!-- Textarea untuk komentar dengan placeholder -->
+      <textarea
+        name="komentar"
+        rows="4"
+        cols="50"
+        placeholder="Masukkan komentar Anda"
+      ></textarea>
+
+      <!-- Dropdown (select) untuk memilih opsi -->
+      <select name="pilihan">
+        <option value="1">Pilihan 1</option>
+        <option value="2">Pilihan 2</option>
+      </select>
+
+      <!-- Input radio untuk memilih jenis kelamin -->
+      <label><input type="radio" name="gender" value="male" /> Laki-laki</label>
+      <label><input type="radio" name="gender" value="female" /> Perempuan</label>
+
+      <!-- Checkbox untuk memilih hobi (bisa lebih dari satu) -->
+      <label><input type="checkbox" name="hobi" value="musik"> Musik</label>
+      <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+      <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
+
+      <!-- Tombol submit untuk mengirimkan form -->
+      <button type="submit">Kirim</button>
+
+      <!-- Tombol dengan fungsi alert saat diklik -->
+      <button type="button" onclick="alert('Halo!')">Klik Saya</button>
+
+      <!-- Input teks dengan validasi panjang karakter -->
+      <input type="text" name="username" required minlength="5" maxlength="20">
+
+      <!-- Input email dengan validasi agar sesuai format email -->
+      <input type="email" name="email" required>
+
+      <!-- Input angka dengan batasan minimal dan maksimal -->
+      <input type="number" name="age" min="18" max="60">
+
+      <!-- Tombol submit tambahan -->
+      <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Form untuk mengunggah file -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <label for="file">Pilih File:</label>
+      <input type="file" id="file" name="file">
+      <button type="submit">Unggah</button>
+    </form>
+  </body>
+</html>
